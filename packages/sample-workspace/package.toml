@@ -1,0 +1,49 @@
+# A declarative package: data only, no executable code.
+# It adds sample logs to the Log Explorer and two saved filters.
+id = "sample.workspace"
+name = "Sample Workspace"
+version = "0.1.0"
+kind = "declarative"
+requires-api = "^0.1"
+
+[[dependency]]
+id = "retrowork.logs"
+version = "^0.1"
+
+[[extension]]
+point = "logs.sources"
+data = { id = "auth", title = "auth.log", group = "services", path = "data/auth.log" }
+
+[[extension]]
+point = "logs.sources"
+data = { id = "api", title = "api.log", group = "services", path = "data/api.log" }
+
+[[extension]]
+point = "logs.sources"
+data = { id = "kernel", title = "kernel.log", group = "system", path = "data/kernel.log" }
+
+[[menu-item]]
+menu = "filters"
+id = "errors-only"
+title = "Errors Only"
+command = "logs.filter.set"
+args = { query = "level:error" }
+order = 10
+
+[[menu-item]]
+menu = "filters"
+id = "warnings-and-errors"
+title = "Warnings and Errors"
+command = "logs.filter.set"
+args = { query = "level:warn level:error" }
+order = 20
+
+[[key-binding]]
+key = "ctrl-1"
+command = "logs.filter.set"
+args = { query = "level:error" }
+
+[[key-binding]]
+key = "ctrl-2"
+command = "logs.filter.set"
+args = { query = "level:warn level:error" }

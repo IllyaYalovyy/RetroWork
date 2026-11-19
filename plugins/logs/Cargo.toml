@@ -1,0 +1,18 @@
+[package]
+name = "retrowork-logs"
+description = "Bundled RetroWork module: log sources, records table, filter and record detail."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+retrowork-platform = { workspace = true }
+semver = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints]
+workspace = true

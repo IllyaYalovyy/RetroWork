@@ -1,0 +1,20 @@
+[package]
+name = "retrowork-cargo"
+description = "Bundled RetroWork module: a project provider for Cargo workspaces."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+retrowork-platform = { workspace = true }
+retrowork-projects = { workspace = true }
+semver = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints]
+workspace = true

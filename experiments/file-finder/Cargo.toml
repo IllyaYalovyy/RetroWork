@@ -1,0 +1,26 @@
+[package]
+name = "retrowork-file-finder-prototype"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+nucleo = "0.5"
+ignore = "0.4.34"
+notify = "8.2"
+gpui.workspace = true
+retrowork-platform.workspace = true
+retrowork-projects.workspace = true
+retrowork-workbench.workspace = true
+retrowork-demo.workspace = true
+semver.workspace = true
+
+[dev-dependencies]
+image.workspace = true
+tempfile.workspace = true
+retrowork-testkit.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

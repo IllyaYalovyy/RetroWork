@@ -1,0 +1,12 @@
+2026-11-16T09:00:01Z INFO auth.session: user 42 signed in
+2026-11-16T09:00:04Z DEBUG auth.token: issued token for user 42
+2026-11-16T09:01:12Z INFO auth.session: user 7 signed in
+2026-11-16T09:02:30Z WARN auth.token: token for user 7 expires in 5 minutes
+2026-11-16T09:03:02Z ERROR auth.db: connection refused (attempt 1)
+2026-11-16T09:03:07Z ERROR auth.db: connection refused (attempt 2)
+2026-11-16T09:03:15Z INFO auth.db: connection restored
+2026-11-16T09:05:44Z INFO auth.session: user 42 signed out
+2026-11-16T09:07:10Z WARN auth.session: 3 failed sign-in attempts for user 13
+2026-11-16T09:07:11Z ERROR auth.session: account 13 locked
+2026-11-16T09:09:00Z INFO auth.session: user 7 signed out
+2026-11-16T09:10:30Z INFO auth.token: purged 2 expired tokens

@@ -1,0 +1,8 @@
+2026-11-16T08:59:50Z INFO kernel.boot: Linux version 7.3.3
+2026-11-16T08:59:51Z INFO kernel.cpu: 16 processors online
+2026-11-16T08:59:52Z WARN kernel.acpi: firmware bug: bad table checksum
+2026-11-16T08:59:53Z INFO kernel.net: eth0 link up 1000Mbps
+2026-11-16T09:02:59Z ERROR kernel.net: eth0 link down
+2026-11-16T09:03:14Z INFO kernel.net: eth0 link up 1000Mbps
+2026-11-16T09:06:40Z DEBUG kernel.sched: rebalanced 3 tasks
+2026-11-16T09:09:59Z INFO kernel.fs: sync completed

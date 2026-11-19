@@ -1,0 +1,23 @@
+# A process package: its code runs in a separate OS process and talks to the
+# host over stdin/stdout (plugin protocol version 0, experimental).
+id = "sample.top-components"
+name = "Top Components (process plugin)"
+version = "0.1.0"
+kind = "process"
+requires-api = "^0.1"
+
+[process]
+# Looked up in this directory, then next to the host executable.
+command = "retrowork-plugin-sample"
+timeout-ms = 5000
+
+[[command]]
+id = "sample.top-components.run"
+title = "Top Components"
+
+[[menu-item]]
+menu = "tools"
+id = "top-components"
+title = "Top Components (process plugin)"
+command = "sample.top-components.run"
+order = 50

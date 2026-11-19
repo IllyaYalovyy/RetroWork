@@ -1,0 +1,10 @@
+rule compile
+  command = cc main.c -o hello
+rule run_program
+  command = ./hello
+rule test_program
+  command = ./hello test
+build hello: compile main.c
+build run: run_program hello
+build test: test_program hello
+default hello

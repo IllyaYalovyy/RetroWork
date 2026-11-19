@@ -1,0 +1,19 @@
+[package]
+name = "retrowork-log-stats"
+description = "Bundled RetroWork module: level and component statistics for the active log."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+retrowork-logs = { workspace = true }
+retrowork-platform = { workspace = true }
+semver = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+tempfile = { workspace = true }
+
+[lints]
+workspace = true

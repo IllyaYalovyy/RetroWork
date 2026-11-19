@@ -1,0 +1,15 @@
+2026-11-16T09:00:00Z INFO api.gateway: listening on :8080
+2026-11-16T09:00:05Z INFO api.gateway: GET /health 200 1ms
+2026-11-16T09:01:15Z INFO api.orders: POST /orders 201 34ms
+2026-11-16T09:01:16Z DEBUG api.orders: order 1001 queued
+2026-11-16T09:02:00Z WARN api.gateway: slow request GET /reports 1840ms
+2026-11-16T09:03:03Z ERROR api.orders: upstream auth unavailable
+    caused by: connection refused
+2026-11-16T09:03:04Z ERROR api.gateway: POST /orders 503 12ms
+2026-11-16T09:03:16Z INFO api.orders: upstream auth recovered
+2026-11-16T09:04:00Z INFO api.gateway: GET /orders/1001 200 8ms
+2026-11-16T09:05:30Z TRACE api.gateway: keep-alive ping
+2026-11-16T09:06:00Z INFO api.orders: POST /orders 201 29ms
+2026-11-16T09:06:01Z DEBUG api.orders: order 1002 queued
+2026-11-16T09:08:45Z WARN api.orders: retrying payment for order 1002
+2026-11-16T09:08:47Z INFO api.orders: payment settled for order 1002

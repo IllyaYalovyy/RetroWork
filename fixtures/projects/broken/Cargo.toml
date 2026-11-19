@@ -1,0 +1,7 @@
+[package]
+name = "broken"
+version = "0.1.0"
+edition = "2021"
+
+# A standalone package: do not join a workspace in a parent directory.
+[workspace]

@@ -1,0 +1,3 @@
+version = 1
+name = "workspace"
+provider = "cargo"
